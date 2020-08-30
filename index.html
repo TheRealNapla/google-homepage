@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+
+<html>
+    <style>
+        .nav {
+    color: rgb(34,34,34);
+    align-items: center;
+    height: 45px;
+    flex-basis: auto;
+}
+
+.left-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    float: left;
+    margin: 7px 0px 0px 10px;
+}
+
+.right-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    float: right;
+    margin: 7px 10px 0px 0px;
+}
+
+.nav-def {
+    display: inline-block;
+    align-items: center;
+    width: auto;
+    font-size: 13px;
+    margin: 10px 5px 10px 5px;
+    opacity: .75;
+    text-decoration: none;  
+    color:  rgba( 0, 0, 0, 0.9);
+}
+
+.nav-def:hover{
+    text-decoration: underline;
+}
+
+.nav-Menu {
+    display: inline-block;   
+    width: 20px;
+    height: auto;
+}
+
+.Logo {
+    display: block;
+    margin: 145px auto 0px auto;
+}
+
+.srch-container {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 25px;
+    width: 460px;
+    height: 42px;
+    margin: 25px auto 0px auto;
+    align-items: center;
+    justify-items: center;
+}
+
+.srch-img {
+    margin: auto 15px auto 15px;
+    width: 18px;
+    height: auto;
+    opacity: 40%;
+}
+
+.srch-box {
+    display: block;
+    margin: auto;
+    width: 420px;
+    font-size: 16px;
+    height: 34px;
+    border: 0px;
+    text-align: left;
+    background-color: rgba(0,0,0,0);
+}
+
+#bttn-container {
+    display: flex;
+    margin: 32px auto 0px auto;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.btns {
+    border: none;
+    background-image: -moz-linear-gradient(rgb(245,245,245), rgb(241,241,241));
+    height: 36px;
+    margin: 11px 6px 11px 6px;
+    box-shadow: none;
+    width: 120px;
+    line-height: 27px;
+    border-radius: 5px;
+}
+
+.btns:hover {
+    border: 1px solid;    
+    text-decoration: bold;
+    border-color: rgba(0,0,0,0.2);
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 38px;
+    margin: auto -15px auto -15px;
+    background-image: -moz-linear-gradient(rgb(245,245,245), rgb(241,241,241));
+    font-size: 12px;
+}
+
+.foot-left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+    float: left;
+    margin: auto 15px auto 20px;
+}
+
+.foot-right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+    float: right;
+    margin: auto 20px auto 15px;
+}
+    </style>
+    <head>
+        
+        <link rel="stylesheet" href="styles.css">
+        <div class="nav">
+            <div class="left-nav">
+                <a href="#" class="nav-def">About</a>
+                <a href="#" class="nav-def">Store</a> 
+            </div>
+            
+            <div class="right-nav">
+                <a href="#" class="nav-def">Gmail</a>
+                <a href="#"  class="nav-def">Images</a>
+                <img class="nav-def nav-Menu" src="https://static.thenounproject.com/png/198752-200.png" alt="Menu">
+            </div>            
+        </div>
+    </head>
+
+    <body>
+        <div class="body-container">
+            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" class="Logo" alt="Google Logo">
+            <form>
+                <div class="srch-container">
+                    <img class="srch-img" src="https://image.flaticon.com/icons/png/512/68/68213.png">
+                    <input type="search" class="srch-box">
+                    <img class="srch-img" src="data:image/png;base64,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">
+                </div>
+                <div id="bttn-container">
+                    <input type="button" class="btns" value="Google Search">
+                    <input type="button" class="btns" value="I'm Feeling Lucky">
+                </div>            
+            </form>
+            <footer>
+                <div class="foot-left">
+                    <a class="nav-def" href="#">Advertising</a>
+                    <a class="nav-def" href="#">Business</a>
+                    <a class="nav-def" href="#">How Search works</a>
+                </div>
+                <div class="foot-right">
+                    <a class="nav-def" href="#">Privacy</a>
+                    <a class="nav-def" href="#">Terms</a>
+                    <a class="nav-def" href="#">Settings</a>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
